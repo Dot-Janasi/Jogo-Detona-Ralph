@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*o tamanho da caixa mede de uma ponta a outra sem contar margens*/
+        font-family: "Press Start 2P", serif;
+        font-weight: 400;
+        font-style: normal;     
+}

@@ -1,0 +1,68 @@
+.container{
+    display: flex; /* deixca os elementos mais flexiveis*/
+    flex-direction: column; /*como queremos que ele fique em colunas é só colocarmos esse comando*/
+    height: 100vh;
+    background-image: url(../imgs/background.jpg);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly; /*deixa eles com um leve espacamento*/
+    align-items: center; /*elementos sempre alianhados no centro*/
+    
+    height: 90px;/*se vc nao passar um tamanho posicionar os elementos pode deixa-los quebrados*/
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 5px solid #ffd700;
+}
+
+.panel{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: rgb(51, 141, 214);
+}
+
+.enemy{ /*sempre que uma div tiver a class enemy ele terá a imagem do ralph como fundo*/
+    background-image: url("../imgs/Ralph\ GIF.gif");
+    background-size: cover; /*escala a imagem enquanto mantem o tamanho e largura originais*/
+    cursor: pointer;
+}
+
+.menu-lives{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-time h2 :nth-child(2) /*essa linha procura o 2 "filho" da tag h2 dentro do menu-time para usar a funcao escolhida*/,
+.menu-score h2 :nth-child(2) {
+    margin-top: 10px;
+}
+
+button{    
+    height: 100px;
+    width: 170px;    
+    margin:  auto;    
+    border-radius: 20px;
+    color: #008cff; 
+    text-transform: uppercase;
+    border-color: #008cff;
+    background-color: #250b00;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #833a10;
+    color: #ffffff ;
+    border-color: #ffffff;
+}

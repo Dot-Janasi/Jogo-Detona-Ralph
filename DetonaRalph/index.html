@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- settigs -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="shortcut icon" href="./src/imgs/DR_logo.webp" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <div class="container">
+            <div class="menu">
+                <div class="menu-time">
+                    <h2 style="color: red;">Tempo Restante</h2>
+                    <h2 id="time-left">0</h2>
+                </div>
+                <div class="menu-score">
+                    <h2 style="color: red;">Sua Pontuação</h2>
+                    <h2 id="score">0</h2>
+                </div>
+                <div class="menu-lives">
+                    <img src="./src/imgs/Player.png" alt="foto player" height="90px">
+                    <h2 id="lifes">3</h2>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-row">           
+                    <!--" .panel-row>.square[id="0"]*3 "-->
+                    <div class="square " id="1"></div>
+                    <div class="square" id="2"></div>
+                    <div class="square" id="3"></div>
+                </div>
+
+                <div class="panel-row">           
+                    <!--" .panel-row>.square[id="0"]*3 "-->
+                    <div class="square enemy" id="4"></div>
+                    <div class="square" id="5"></div>
+                    <div class="square" id="6"></div>
+                </div>
+
+                <div class="panel-row">           
+                    <!--" .panel-row>.square[id="0"]*3 "-->
+                    <div class="square" id="7"></div>
+                    <div class="square" id="8"></div>
+                    <div class="square" id="9"></div>
+                </div>
+            </div>   
+                    <button onclick="window.location.reload()">Recomeçar</button>
+        </div>
+
+
+
+    
+    <script defer src="./src/scripts/engine.js"></script> 
+    <!-- o comando defer faz com que o o browser que oo script só vai executar depois do documento html ser renderizado com elementos visuais -->
+    <!-- colocamos o caminho para javaScrip no fim do codigo pq geralmente nao queremos que o javascript execute antes do fim da pagina e pode nao funcionar bem se funcionar antes da tela renderizar -->
+</body>
+
+<!-- atalhos HTML 
+'Crtl + alt+ shift + ⬇ + ⬇' = faz com que vc escreva a mesma coisa em 3 linhas diferentes ao mesmo tempo
+"Alt + shift + ⬇" = clona a linha de cima
+'Crtl + K + C' = comentario
+colocar 'div.nomeDaClassNaDiv' = ja cria uma div com um class 
+-->
+</html>
+
+
